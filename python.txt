@@ -1,0 +1,38 @@
+NOTES: What is Python?
+
+1. Python is a high-level programming language
+   - High-level = closer to human language, easier to read and write
+   - Created by Guido van Rossum in 1991
+   
+2. Why Python is popular:
+   - Simple and easy to learn syntax
+   - Reads almost like English
+   - Versatile (can do many things)
+   - Large community support
+   - Extensive libraries available
+
+3. What can we build with Python?
+   - Web applications (Instagram, Spotify, Netflix use Python)
+   - Data Science and Machine Learning
+   - Games
+   - AI applications
+
+
+NOTES: Python Characteristics
+
+1. Interpreted Language:
+   - Code runs line by line
+   - No need to compile before running
+   - Easier to debug
+   
+2. Dynamically Typed:
+   - No need to declare variable types
+   - Python automatically understands data types
+   
+3. Case Sensitive:
+   - 'name' and 'Name' are different
+   - 'print' works, but 'Print' will give error
+   
+4. Indentation Matters:
+   - Python uses indentation (spaces) to define code blocks
+   - Other languages use { }
