@@ -7,39 +7,6 @@ float → decimal numbers (3.14, -0.5)
 
 complex → complex numbers (2 + 3j)
 
-2. Text Type
-
-str → string (text)
-
-3. Boolean Type
-
-bool → True or False
-
-4. Sequence Types
-
-list → ordered, changeable list, []
-
-tuple → ordered, unchangeable list, ()
-
-5. Set Types
-
-set → unordered unique values {}
-
-6. Mapping Type
-
-dict → key–value pairs {k:v}
-
-"""
-
-"""
-1. Numeric Types
-
-int → integer numbers (10, -5, 0)
-
-float → decimal numbers (3.14, -0.5)
-
-complex → complex numbers (2 + 3j)
-
 2. Boolean Type
 
 bool → True or False
@@ -72,12 +39,12 @@ a = 10
 b = -20
 c = 0
 
-print(a, b, c)
+print("Integers:", a, b, c)
 
 # To check the data type 
-print(type(a))   # <class 'int'>
-print(type(b))   # <class 'int'>
-print(type(c))   # <class 'int'>
+print("Type of a:", type(a))   # <class 'int'>
+print("Type of b:", type(b))   # <class 'int'>
+print("Type of c:", type(c))   # <class 'int'>
 
 
 # ----- BASIC ARITHMETIC OPERATIONS WITH int ----- #
@@ -86,31 +53,31 @@ a = 10
 b = 3
 
 # Addition
-print(a + b)   # 13
+print("a + b:", a + b)   # 13
 
 # Subtraction
-print(a - b)   # 7
+print("a - b:", a - b)   # 7
 
 # Multiplication
-print(a * b)   # 30
+print("a * b:", a * b)   # 30
 
 # Division – / vs //
-print(a / b)   # 3.3333333333 (normal division, result is float)
-print(a // b)  # 3            (floor division, result is int)
+print("a / b:", a / b)   # 3.3333333333 (normal division, result is float)
+print("a // b:", a // b)  # 3            (floor division, result is int)
 
 # / → normal division (can give decimal)
 # // → “cut off” the decimal part (floor division)
 
 
 # Remainder (Modulo)
-print(a % b)   # 1
+print("a % b:", a % b)   # 1
 
 # % gives remainder after division.
 # Example: 10 / 3 is 3 with remainder 1 → % gives 1.
 
 
 # Power (Exponent)
-print(a ** b)  # 10 ** 3 = 1000
+print("a ** b:", a ** b)  # 10 ** 3 = 1000
 
 # a ** b means “a to the power b”.
 
@@ -122,12 +89,12 @@ print(a ** b)  # 10 ** 3 = 1000
 x = 10
 y = 20
 
-print(x == y)   # False
-print(x != y)   # True
-print(x > y)    # False
-print(x < y)    # True
-print(x >= 10)  # True
-print(y <= 20)  # True
+print("x == y:", x == y)   # False
+print("x != y:", x != y)   # True
+print("x > y:", x > y)    # False
+print("x < y:", x < y)    # True
+print("x >= 10:", x >= 10)  # True
+print("y <= 20:", y <= 20)  # True
 
 
 # ----- TYPE CONVERSION (CASTING) WITH int ----- #
@@ -143,8 +110,8 @@ print(int(f2))   # 5
 s1 = "10"
 s2 = "20"
 
-print(int(s1))   # 10
-print(int(s2))   # 250
+print("int('10'):", int(s1))   # 10
+print("int('20'):", int(s2))   # 20
 
 # Invalid conversions (will give error if you try)
 # int("10.5")    # ValueError (string has decimal)
@@ -160,12 +127,12 @@ x = 3.14
 y = -2.5
 z = 0.0
 
-print(x, y, z)
+print("Floats:", x, y, z)
 
 # To check the data type
-print(type(x))   # <class 'float'>
-print(type(y))   # <class 'float'>
-print(type(z))   # <class 'float'>
+print("Type of x:", type(x))   # <class 'float'>
+print("Type of y:", type(y))   # <class 'float'>
+print("Type of z:", type(z))   # <class 'float'>
 
 
 # Basic arithmetic operations with float
@@ -174,25 +141,25 @@ a = 5.5
 b = 2.0
 
 # Addition
-print(a + b)   # 7.5
+print("a + b:", a + b)   # 7.5
 
 # Subtraction
-print(a - b)   # 3.5
+print("a - b:", a - b)   # 3.5
 
 # Multiplication
-print(a * b)   # 11.0
+print("a * b:", a * b)   # 11.0
 
 # Division
-print(a / b)   # 2.75 (normal division, result is float)
+print("a / b:", a / b)   # 2.75 (normal division, result is float)
 
 # Floor division //
-print(a // b)  # 2.0 (cuts off decimal part, result is still float)
+print("a // b:", a // b)  # 2.0 (cuts off decimal part, result is still float)
 
 # Remainder (Modulo)
-print(a % b)   # 1.5
+print("a % b:", a % b)   # 1.5
 
 # Power (Exponent)
-print(a ** b)  # 5.5 ** 2.0 = 30.25
+print("a ** b:", a ** b)  # 5.5 ** 2.0 = 30.25
 
 
 # Mixing int and float
@@ -200,9 +167,9 @@ print(a ** b)  # 5.5 ** 2.0 = 30.25
 p = 10      # int
 q = 3.5     # float
 
-print(p + q)   # 13.5 (float)
-print(p * q)   # 35.0 (float)
-print(p / q)   # 2.857142857142857 (float)
+print("p + q:", p + q)   # 13.5 (float)
+print("p * q:", p * q)   # 35.0 (float)
+print("p / q:", p / q)   # 2.857142857142857 (float)
 
 
 # Comparison operators with float
@@ -210,12 +177,12 @@ print(p / q)   # 2.857142857142857 (float)
 m = 10.5
 n = 20.0
 
-print(m == n)    # False
-print(m != n)    # True
-print(m > n)     # False
-print(m < n)     # True
-print(m >= 10.5) # True
-print(n <= 20.0) # True
+print("m == n:", m == n)    # False
+print("m != n:", m != n)    # True
+print("m > n:", m > n)     # False
+print("m < n:", m < n)     # True
+print("m >= 10.5:", m >= 10.5) # True
+print("n <= 20.0:", n <= 20.0) # True
 
 
 # Type conversion (casting) with float
@@ -223,14 +190,14 @@ print(n <= 20.0) # True
 # int -> float
 num_int = 5
 num_float = float(num_int)
-print(num_int, type(num_int))       # 5 <class 'int'>
-print(num_float, type(num_float))   # 5.0 <class 'float'>
+print("num_int:", num_int, "->", type(num_int))       # 5 <class 'int'>
+print("num_float:", num_float, "->", type(num_float))   # 5.0 <class 'float'>
 
 # string -> float
 s1 = "3.5"
 s2 = "10"
-print(float(s1))    # 3.5
-print(float(s2))    # 10.0
+print("float('3.5'):", float(s1))    # 3.5
+print("float('10'):", float(s2))    # 10.0
 
 # Invalid conversions (will give error if you try)
 # float("abc")     # ValueError
@@ -241,23 +208,19 @@ print(float(s2))    # 10.0
 
 # type() - to check the data type
 val = 4.75
-print(type(val))    # <class 'float'>
+print("Type of val:", type(val))    # <class 'float'>
 
 # float() - to convert other types to float
-print(float(7))         # 7.0 (int -> float)
-print(float("2.25"))    # 2.25 (string -> float)
+print("float(7):", float(7))         # 7.0 (int -> float)
+print("float('2.25'):", float("2.25"))    # 2.25 (string -> float)
 
 # round() - to round float values
 
 pi = 3.14159265
 
-print(round(pi))       # 3      (rounded to nearest integer)
+print(round(pi))       # 3      (rounded to nearest integer) -> if >= 0.50= next integer(ex.3.6=4)``
 print(round(pi, 2))    # 3.14   (2 decimal places)
-print(round(pi, 3))    # 3.142  (3 decimal places)
-
-# Example: floating-point precision issue
-print(0.1 + 0.2)         # 0.30000000000000004 (small precision error)
-print(round(0.1 + 0.2, 2))  # 0.3 (use round to clean it)
+print(round(pi, 3))    # 3.141  (3 decimal places)
 
 #==================================================================================
 
@@ -275,17 +238,17 @@ z2 = -1 - 4j
 z3 = 5.0 + 0j     # real part float
 z4 = 0 + 2j       # only imaginary
 
-print(z1, z2, z3, z4)
+print("Complex numbers:", z1, z2, z3, z4)
 
 # Check data type
-print(type(z1))   # <class 'complex'>
+print("Type of z1:", type(z1))   # <class 'complex'>
 
 # Accessing real and imaginary parts
-print(z1.real)    # 2.0
-print(z1.imag)    # 3.0
+print("z1.real:", z1.real)    # 2.0
+print("z1.imag:", z1.imag)    # 3.0
 
-print(z2.real)    # -1.0
-print(z2.imag)    # -4.0
+print("z2.real:", z2.real)    # -1.0
+print("z2.imag:", z2.imag)    # -4.0
 
 
 # ----- BASIC OPERATIONS WITH COMPLEX NUMBERS ----- #
@@ -294,16 +257,16 @@ a = 2 + 3j
 b = 1 - 4j
 
 # Addition
-print(a + b)    # (3-1j)
+print("a + b:", a + b)    # (3-1j)
 
 # Subtraction
-print(a - b)    # (1+7j)
+print("a - b:", a - b)    # (1+7j)
 
 # Multiplication
-print(a * b)    # (14-5j)
+print("a * b:", a * b)    # (14-5j)
 
 # Division
-print(a / b)    # ( -0.5882352941176471 + 0.6470588235294118j ) approx
+print("a / b:", a / b)    # ( -0.5882352941176471 + 0.6470588235294118j ) approx
 
 
 # Conjugate of a complex number
@@ -422,11 +385,13 @@ second_char = sample_str[1]  # 'e'
 third_char = sample_str[2]   # 'l'
 fourth_char = sample_str[3]   # 'l'
 last_char = sample_str[4]    # 'o'
+# error_char =  sample_str[5] # IndexError -> IndexError: string index out of range
 print("First character:", first_char)
 print("Second character:", second_char)
 print("Third character:", third_char)   
 print("Fourth character:", fourth_char)   
 print("Last character:", last_char)
+# print("Error character:", error_char)
 
 
 # Accessing characters using negative indexing
@@ -481,7 +446,7 @@ print("Trailing Whitespace Removed:", trailing_str)
 
 
 # 3. Finding substrings
-main_str = "Hello, welcome to my coding journey, hello Python world."
+main_str = "hello, welcome to my coding journey, hello Python world."
 """
 Finding the first occurrence of a substring
 It is case-sensitive
@@ -538,6 +503,7 @@ word6 = "Python"
 print("Is lowercase:", word6.islower())  # False
 
 
+
 # Check if all characters are uppercase
 word7 = "PYTHON"        
 is_upper = word7.isupper()
@@ -587,7 +553,7 @@ print("List of fruits:", fruits_list)
 # When we join it become a single string again
 # We can specify the joiner while joining
 # It doesnt have any default separator in the beginning
-joined_str = " ".join(words_list)  # Join with space
+joined_str = "".join(words_list)  # Join with space
 print("Joined string:", joined_str)
 
 joined_str_comma = "-".join(fruits_list)  # Join with comma
