@@ -1,0 +1,27 @@
+"""
+Custom math operations module
+"""
+
+def add(a, b):
+    """Add two numbers."""
+    return a + b
+
+def subtract(a, b):
+    """Subtract b from a."""
+    return a - b
+
+def multiply(a, b):
+    """Multiply two numbers."""
+    return a * b
+
+def divide(a, b):
+    """Divide a by b."""
+    if b == 0:
+        return "Cannot divide by zero"
+    return a / b
+
+# Module-level variable
+PI = 3.14159
+
+# Module runs when imported
+print("my_math module loaded")

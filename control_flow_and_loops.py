@@ -145,7 +145,7 @@ NOTES:
 
 # Basic nested if
 age = 20
-has_license = True
+has_license = False
 
 print("\nAge:", age)
 print("Has license:", has_license)
@@ -361,6 +361,7 @@ for i in [1, 2, 3, 4, 5]:
 # for loop with string
 text = "Python"
 print("\nCharacters in 'Python':")
+# P y t h o n
 
 for char in text:
     print(char)

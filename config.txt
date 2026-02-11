@@ -1,0 +1,4 @@
+theme=dark
+language=English
+auto_save=true
+font_size=12

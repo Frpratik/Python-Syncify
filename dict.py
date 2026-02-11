@@ -245,7 +245,7 @@ NOTES:
 - items() - returns all key-value pairs as tuples
 - get() - safely access value
 - update() - merge dictionaries
-- setdefault() - get value or set default if key doesn't exist
+# - setdefault() - get value or set default if key doesn't exist
 - copy() - create shallow copy
 """
 
@@ -336,7 +336,7 @@ NOTES:
 
 # Basic dictionary comprehension
 squares = {x: x**2 for x in range(1, 6)}
-# squares = [x*2 for x in range(1, 6)]   => [2,4,6,8,10]   #list comprehension
+# squares = [x**2 for x in range(1, 6)]   => [2,4,6,8,10]   #list comprehension
 print("\nSquares dictionary:", squares)
 
 # Dictionary comprehension with condition
@@ -658,30 +658,29 @@ NOTES:
 - any() - True if any key is True
 - all() - True if all keys are True
 """
-
 sample_dict = {"a": 10, "b": 20, "c": 30}
 print("\nSample dictionary:", sample_dict)
 print("Length:", len(sample_dict))
 print("Max key:", max(sample_dict))
 print("Min key:", min(sample_dict))
 
-# Max/Min by value
-print("Max by value:", max(sample_dict, key=sample_dict.get))
-print("Min by value:", min(sample_dict, key=sample_dict.get))
-print("Max value:", max(sample_dict.values()))
-print("Min value:", min(sample_dict.values()))
+# # Max/Min by value
+# print("Max by value:", max(sample_dict, key=sample_dict.get))
+# print("Min by value:", min(sample_dict, key=sample_dict.get))
+# print("Max value:", max(sample_dict.values()))
+# print("Min value:", min(sample_dict.values()))
 
-# Sum of values
-print("Sum of values:", sum(sample_dict.values()))
+# # Sum of values
+# print("Sum of values:", sum(sample_dict.values()))
 
-# any() and all()
-dict1 = {1: "a", 2: "b", 3: "c"}
-dict2 = {0: "a", 1: "b", 2: "c"}
-print("\ndict1 keys:", dict1.keys())
-print("all() on keys:", all(dict1.keys()))
-print("\ndict2 keys:", dict2.keys())
-print("all() on keys (has 0):", all(dict2.keys()))
-print("any() on keys:", any(dict2.keys()))
+# # any() and all()
+# dict1 = {1: "a", 2: "b", 3: "c"}
+# dict2 = {0: "a", 1: "b", 2: "c"}
+# print("\ndict1 keys:", dict1.keys())
+# print("all() on keys:", all(dict1.keys()))
+# print("\ndict2 keys:", dict2.keys())
+# print("all() on keys (has 0):", all(dict2.keys()))
+# print("any() on keys:", any(dict2.keys()))
 
 #==================================================================================
 # CONVERTING BETWEEN DATA TYPES
@@ -705,13 +704,13 @@ list_of_tuples = list(sample.items())
 print("\nDictionary:", sample)
 print("Converted to list of tuples:", list_of_tuples)
 
-# Two lists to dictionary using zip
-names = ["Alice", "Bob", "Charlie"]
-ages = [20, 22, 21]
-people = dict(zip(names, ages))
-print("\nNames:", names)
-print("Ages:", ages)
-print("Dictionary from zip:", people)
+# # Two lists to dictionary using zip
+# names = ["Alice", "Bob", "Charlie"]
+# ages = [20, 22, 21]
+# people = dict(zip(names, ages))
+# print("\nNames:", names)
+# print("Ages:", ages)
+# print("Dictionary from zip:", people)
 
 # Dictionary keys to list
 keys_list = list(sample.keys())

@@ -1,0 +1,2 @@
+Written using with statement
+File will be auto-closed
